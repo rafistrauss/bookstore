@@ -12,7 +12,7 @@ class CreateBookInfoTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('book-info', function(Blueprint $table)
+		Schema::create('bookInfo', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name');
@@ -29,7 +29,7 @@ class CreateBookInfoTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('book-info');
+		Schema::drop('bookInfo');
 	}
 
 }

@@ -16,9 +16,9 @@ class CreateCategoriesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->int('schoolID');
+			$table->integer('schoolID');
 			$table->string('schoolCourseID');
-			$table->int('categoryID');
+			$table->integer('categoryID');
 			$table->timestamps();
 		});
 	}
